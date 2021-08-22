@@ -32,6 +32,31 @@ function Index() {
       </div>
 
       <div className="container mx-auto mt-5">
+        <div className="mt-5 md:mt-0 md:col-span-2 mb-4">
+          <div className="shadow sm:rounded-md sm:overflow-hidden">
+            <div className="px-4 py-5 bg-white space-y-6 sm:p-6">
+              <div class="mapouter">
+                <div class="gmap_canvas flex flex-row">
+                  <iframe
+                    width="100%"
+                    height="500"
+                    id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=USF-%20Egenho%20do%20Meio%20-%20Unidade%20de%20sa%C3%BAde&t=&z=19&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0"
+                    scrolling="no"
+                    marginheight="0"
+                    marginwidth="0"
+                  ></iframe>
+                  <img
+                    src="../../usf.png"
+                    className="w-64 border-4 border-pink-500 border-opacity-25"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {conteudo.map((conteudo, index) => (
           <div className="mt-5 md:mt-0 md:col-span-2 mb-4" key={index}>
             <div className="shadow sm:rounded-md sm:overflow-hidden">
